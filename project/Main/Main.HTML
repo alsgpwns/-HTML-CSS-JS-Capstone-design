@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" type="text/CSS" href="Main.CSS">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="header" class="container">
+            <div id="logo">
+                <a href="Main.HTML"><h1>Logo</h1></a>
+            </div>
+
+            <div id="signbutton">
+                <ul>
+                    <li><a href="#" id="signin">Sgin In</a></li>
+                    <li><a href="#" id="signup">Sgin Up</a></li>
+                </ul>
+            </div>
+
+            <div id="topbutton">
+                <a href="#header" id="topbutton"><i class="fas fa-arrow-circle-up"></i></a>
+            </div>
+            
+        </div>
+
+
+    </header>
+
+    <main>
+        <div id="topmenu">
+            <div id="search">
+                <input type="text" placeholder="Search by name or location...">
+                <button>검색</button>
+            </div>
+
+            <div id="map">
+                <a href="https://map.kakao.com/?urlX=505941&urlY=1111493&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank">
+                    <img width="200" height="130" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=505941&MY=1111493&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc">
+                </a><div class="hide" style="overflow:hidden;padding:7px 11px;border:1px solid #dfdfdf;border-color:rgba(0,0,0,.1);border-radius:0 0 2px 2px;background-color:#f9f9f9;width: 175px;"><strong style="float: left;"><img src="https://t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵"></strong><div style="float: right;position:relative"><a style="font-size:12px;text-decoration:none;float:left;height:15px;padding-top:1px;line-height:15px;color:#000" target="_blank" href="https://map.kakao.com/?urlX=505941&urlY=1111493&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false">지도 크게 보기</a></div></div>
+            </div>
+            
+            <select name="정렬">
+                <option value="별점순"  selected="selected">별점순</option>
+                <option value="최신순">최신순</option>
+                <option value="리뷰순">리뷰순</option>
+                <option value="위치순">위치순</option>
+            </select>
+
+        </div>
+
+        <section class="box" id="cafe1">
+            <a href="#" class="image feature">
+                <img src="images/대표이미지.PNG" alt="어디어디">
+            </a>
+            <div class="inner">
+                <b>카페 명</b><b id="rating">별점</b>
+                <p>대표 카페 소개 글(문장)</p>
+                <p><i class="fas fa-pen"></i> 리뷰 갯수</p>
+                <p><i class="fas fa-map-marker-alt"></i> 위치</p>
+            </div>
+        </section>
+
+        <section class="box" id="cafe2">
+            <a href="#" class="image feature">
+                <img src="images/cafe1.jpg" alt="어디어디">
+            </a>
+            <div class="inner">
+                <b>EAT Cafe</b><b id="rating">4.5</b>
+                <p>풍미가 좋은 핸드 드립 전문 카페</p>
+                <p><i class="fas fa-pen"></i> 2001</p>
+                <p><i class="fas fa-map-marker-alt"></i> 강남시 강남구 강남로 111</p>
+            </div>
+        </section>
+
+        <section class="box" id="cafe3">
+            <a href="#" class="image feature">
+                <img src="images/테라로사.PNG" alt="어디어디">
+            </a>
+            <div class="inner">
+                <b>Tera Rosa</b><b id="rating">4.5</b>
+                <p>한강뷰의 3층 카페</p>
+                <p><i class="fas fa-pen"></i> 1057</p>
+                <p><i class="fas fa-map-marker-alt"></i> 강원도 강원시 강원로 111</p>
+            </div>
+        </section>
+
+        <section class="box" id="cafe4">
+            <a href="#" class="image feature">
+                <img src="images/cafe3.PNG" alt="어디어디">
+            </a>
+            <div class="inner">
+                <b>Dessert academy</b><b>Tera Rosa</b><b id="rating">4.3</b>
+                <p>조용하고 아늑한 분위기의 카페</p>
+                <p><i class="fas fa-pen"></i> 427</p>
+                <p><i class="fas fa-map-marker-alt"></i> 경기도 구리시 구리로 111</p>
+            </div>
+        </section>
+
+        <section class="box" id="cafe5">
+            <a href="#" class="image feature">
+                <img src="images/cafe4.PNG" alt="어디어디">
+            </a>
+            <div class="inner">
+                <b>카페 명</b><b id="rating">4.1</b>
+                <p>대표 카페 소개 글(문장)</p>
+                <p><i class="fas fa-pen"></i> 5971</p>
+                <p><i class="fas fa-map-marker-alt"></i> 위치</p>
+            </div>
+        </section>
+
+        <section class="box" id="cafe6">
+            <a href="#" class="image feature">
+                <img src="images/cafe5.PNG" alt="어디어디">
+            </a>
+            <div class="inner">
+                <b>Tera Rosa</b><b id="rating">3.8</b>
+                <p>대표 카페 소개 글(문장)</p>
+                <p><i class="fas fa-pen"></i> 1872</p>
+                <p><i class="fas fa-map-marker-alt"></i> 위치</p>
+            </div>
+        </section>
+
+        <section class="box" id="cafe7">
+            <a href="#" class="image feature">
+                <img src="images/cafe6.PNG" alt="어디어디">
+            </a>
+            <div class="inner">
+                <b>카페 명</b><b id="rating">3.7</b>
+                <p>대표 카페 소개 글(문장)</p>
+                <p><i class="fas fa-pen"></i> 7531</p>
+                <p><i class="fas fa-map-marker-alt"></i> 위치</p>
+            </div>
+        </section>
+
+        <section class="box" id="cafe8">
+            <a href="#" class="image feature">
+                <img src="images/cafe7.PNG" alt="어디어디">
+            </a>
+            <div class="inner">
+                <b>카페 명</b><b id="rating">3.7</b>
+                <p>대표 카페 소개 글(문장)</p>
+                <p><i class="fas fa-pen"></i> 1372</p>
+                <p><i class="fas fa-map-marker-alt"></i> 위치</p>
+            </div>
+        </section>
+
+        <section class="box" id="cafe9">
+            <a href="#" class="image feature">
+                <img src="images/cafe8.PNG" alt="어디어디">
+            </a>
+            <div class="inner">
+                <b>카페 명</b><b id="rating">3.5</b>
+                <p>대표 카페 소개 글(문장)</p>
+                <p><i class="fas fa-pen"></i> 572</p>
+                <p><i class="fas fa-map-marker-alt"></i> 위치</p>
+            </div>
+        </section>
+
+
+        <div id="lead">
+            <button type="button">
+                <b>learn more</b>
+            </button>
+        </div>
+    </main>
+
+    <footer>
+
+
+        <section class="links" id="link1">
+            <h3>Random Stuff</h3>
+            <ul class="style2">
+                <li><a href="#">Etiam feugiat condimentum</a></li>
+                <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+                <li><a href="#">Sed porttitor cras in erat nec</a></li>
+                <li><a href="#">Felis varius pellentesque potenti</a></li>
+                <li><a href="#">Nullam scelerisque blandit leo</a></li>
+            </ul>
+        </section>
+
+        <section class="links" id="link2">
+            <h3>Random Stuff</h3>
+            <ul class="style2">
+                <li><a href="#">Etiam feugiat condimentum</a></li>
+                <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+                <li><a href="#">Sed porttitor cras in erat nec</a></li>
+                <li><a href="#">Felis varius pellentesque potenti</a></li>
+                <li><a href="#">Nullam scelerisque blandit leo</a></li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><a href="#" ><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" ><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" ><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" ><i class="far fa-kiss-wink-heart"></i></a></li>
+                <li><a href="#" ><i class="fas fa-headset"></i></a></li>
+            </ul>
+            <p>BCN LAB, Building D • Hongik University • 2639 SyeJong Road • Jochiwon-eup, Sejong City • South Korea<br />
+            (800) 555-0000</p>
+        </section>
+
+        <div id="copyright">
+            <ul>
+                <li>© Untitled. All rights reserved 　|</li>
+                
+                <li>　Design: Hyejun-min</li>
+            </ul>
+        </div>
+
+
+    </footer>
+   
+    
+</body>
+</html>
